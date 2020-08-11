@@ -10,6 +10,27 @@ namespace ejercicio_1
     {
         static void Main(string[] args)
         {
+            //Uso matrices  registro de usuarios
+
+            string[,] usuario = new string[2, 3];
+
+            for (int i = 0; i < 2; i++)
+            {
+                Console.Write("Ingrese su nombre: ");
+                usuario[i, 0] = Console.ReadLine();
+
+                Console.Write("Ingrese su apellido: ");
+                usuario[i, 1] = Console.ReadLine();
+
+                Console.Write("Ingrese su Mail: ");
+                usuario[i, 2] = Console.ReadLine();
+            }
+
+            for (int i = 0; i < 2; i++)
+            {
+                Console.WriteLine("Usuario:{0} Nombre:{1} Apellido:{2} Mail:{3}",i+1, usuario[i,0], usuario[i,1], usuario[i,2]);
+            }
+            Console.ReadKey();
         }
     }
 }

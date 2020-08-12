@@ -31,7 +31,7 @@ namespace ejercicio_1
 
             for (int i = 0; i < 2; i++)
             {
-                Console.WriteLine("Usuario:{0} Nombre:{1} Apellido:{2} Mail:{3}",i+1, usuario[i,0], usuario[i,1], usuario[i,2], usuario[i, 3]);
+                Console.WriteLine("Usuario:{0} Nombre:{1} Apellido:{2} Mail:{3} N° Celular:{4}",i+1, usuario[i,0], usuario[i,1], usuario[i,2], usuario[i, 3]);
             }
             Console.ReadKey();
         }

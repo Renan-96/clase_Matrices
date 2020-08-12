@@ -12,7 +12,7 @@ namespace ejercicio_1
         {
             //Uso matrices  registro de usuarios
 
-            string[,] usuario = new string[2, 3];
+            string[,] usuario = new string[2, 4];
 
             for (int i = 0; i < 2; i++)
             {
@@ -24,11 +24,14 @@ namespace ejercicio_1
 
                 Console.Write("Ingrese su Mail: ");
                 usuario[i, 2] = Console.ReadLine();
+
+                Console.Write("Ingrese su N° de Celular");
+                usuario[i, 3] = Console.ReadLine();
             }
 
             for (int i = 0; i < 2; i++)
             {
-                Console.WriteLine("Usuario:{0} Nombre:{1} Apellido:{2} Mail:{3}",i+1, usuario[i,0], usuario[i,1], usuario[i,2]);
+                Console.WriteLine("Usuario:{0} Nombre:{1} Apellido:{2} Mail:{3}",i+1, usuario[i,0], usuario[i,1], usuario[i,2], usuario[i, 3]);
             }
             Console.ReadKey();
         }

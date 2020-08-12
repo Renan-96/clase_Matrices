@@ -16,22 +16,22 @@ namespace ejercicio_1
 
             for (int i = 0; i < 2; i++)
             {
-                Console.Write("Ingrese su nombre: ");
+                Console.Write("Ingrese su Nombre: ");
                 usuario[i, 0] = Console.ReadLine();
 
-                Console.Write("Ingrese su apellido: ");
+                Console.Write("Ingrese su Apellido: ");
                 usuario[i, 1] = Console.ReadLine();
 
                 Console.Write("Ingrese su Mail: ");
                 usuario[i, 2] = Console.ReadLine();
 
-                Console.Write("Ingrese su N° de Celular");
+                Console.Write("Ingrese su N° de Celular: ");
                 usuario[i, 3] = Console.ReadLine();
             }
 
             for (int i = 0; i < 2; i++)
             {
-                Console.WriteLine("Usuario:{0} Nombre:{1} Apellido:{2} Mail:{3} N° Celular:{4}",i+1, usuario[i,0], usuario[i,1], usuario[i,2], usuario[i, 3]);
+                Console.WriteLine("Usuario:{0}. Nombre:{1}. Apellido:{2}. Mail:{3}. N° Celular:{4}.",i+1, usuario[i,0], usuario[i,1], usuario[i,2], usuario[i, 3]);
             }
             Console.ReadKey();
         }

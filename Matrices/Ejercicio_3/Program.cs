@@ -16,10 +16,19 @@ namespace Ejercicio_3
             {
                 Menu();
                 opcion = int.Parse(Console.ReadLine());
-                if (opcion > 0)
+                if (opcion < 5 && opcion > 0)
                 {
                     Operatorias(opcion);
                 }
+                else if (opcion == 0)
+                {
+                    Console.WriteLine("Salir");
+                }
+                else
+                {
+                    Console.WriteLine("Opcion invalida");
+                }
+                               
                 
             } while (opcion != 0);
             
@@ -56,7 +65,7 @@ namespace Ejercicio_3
                     break;
                 case 4: Console.WriteLine("La división es: "+ (n1/n2));
                     break;             
-                default:Console.WriteLine("Opcion no valida");
+                default:
                     break;
             }
 

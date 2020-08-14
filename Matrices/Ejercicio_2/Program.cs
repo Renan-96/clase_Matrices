@@ -28,7 +28,7 @@ namespace Ejercicio_2
         {
             if (n1<0 || n2<0)
             {
-                Console.WriteLine("No se pueden restar numeros negativos");
+                Console.WriteLine("No se pueden sumar numeros negativos");
             }
             else
             {
@@ -39,7 +39,7 @@ namespace Ejercicio_2
         {
             if (n1 < 0 || n2 < 0)
             {
-                Console.WriteLine("No se pueden sumar numeros negativos");
+                Console.WriteLine("No se pueden restar numeros negativos");
             }
             else
             {
